@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MaxPrice</title>
+</head>
+<body>
+<form action="/max" method="POST">
+    {{range .}}
+    <br>
+    Bakery type:{{.Bakery_type_max}}<br>
+    Bakery price:{{.Bakery_price_max}}<br>
+    Bakery production date:{{.Bakery_production_date_max}}<br>
+    Bakery shelf life:{{.Bakery_shelf_life_max}}<br>
+    <br>
+    {{end}}
+</form>
+</body>
+</html>
